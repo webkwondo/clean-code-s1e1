@@ -10,6 +10,7 @@
 
 var listItemCls = 'task-list__item';
 var editModeCls = 'task-list__item_mode_edit';
+var checkboxCls = 'task-list__checkbox';
 var buttonClsName = 'button';
 var editButtonClsName = 'button_type_edit';
 var deleteButtonClsName = 'button_type_delete';
@@ -17,7 +18,7 @@ var inputClsName = 'task-list__field';
 var labelClsName = 'task-list__label';
 var taskInput=document.getElementById("new-task");//Add a new task.
 var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.getElementById("incompleteTasks");//ul of #incompleteTasks
+var incompleteTaskHolder=document.getElementById("incompleted-tasks");//ul of #incompleted-tasks
 var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
 
 
@@ -46,6 +47,8 @@ var createNewTaskElement=function(taskString){
 
     //Each elements, needs appending
     checkBox.type="checkbox";
+    checkBox.classList.add(checkboxCls);
+
     editInput.type="text";
     editInput.className = inputClsName;
 
@@ -140,7 +143,7 @@ var taskIncomplete=function(){
     console.log("Incomplete Task...");
 //Mark task as incomplete.
     //When the checkbox is unchecked
-    //Append the task list item to the #incompleteTasks.
+    //Append the task list item to the #incompleted-tasks
     var listItem=this.parentNode;
     incompleteTaskHolder.appendChild(listItem);
     bindTaskEvents(listItem,taskCompleted);
