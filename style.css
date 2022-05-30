@@ -6,6 +6,10 @@
   font-family: Lato, sans-serif;
 }
 
+.add {
+  margin: 1em 0;
+}
+
 .aaa {
   width: 500px;
   margin: 0 auto;
@@ -29,7 +33,7 @@
 
 }
 
-.centered-main-page-element {
+.page__main {
   display: block;
   width: 500px;
   margin: 0 auto 0;
@@ -56,6 +60,19 @@ li {
   list-style: none;
 }
 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
+}
+
 input,
 .button {
   outline: none;
@@ -78,7 +95,7 @@ input,
 
 /* Heading */
 
-h3,
+.page__subtitle,
 label[for="new-task"] {
   color: #333;
   font-weight: 700;
