@@ -14,6 +14,8 @@ var checkboxCls = 'task-list__checkbox';
 var buttonClsName = 'button';
 var editButtonClsName = 'button_type_edit';
 var deleteButtonClsName = 'button_type_delete';
+var deleteButtonAria = 'Delete this task';
+var buttonContentsCls = 'button__contents';
 var inputClsName = 'task-list__field';
 var labelClsName = 'task-list__label';
 var taskInput=document.getElementById("new-task");//Add a new task.
@@ -38,7 +40,7 @@ var createNewTaskElement=function(taskString){
 
     //button.delete
     var deleteButton=document.createElement("button");//delete button
-    var deleteButtonImg=document.createElement("img");//delete button image
+    var deleteButtonSpan = document.createElement("span");
 
     listItem.classList.add(listItemCls);
 
@@ -56,8 +58,9 @@ var createNewTaskElement=function(taskString){
     editButton.classList.add(buttonClsName, editButtonClsName);
 
     deleteButton.classList.add(buttonClsName, deleteButtonClsName);
-    deleteButtonImg.src='./remove.svg';
-    deleteButton.appendChild(deleteButtonImg);
+    deleteButton.ariaLabel = "Delete this task";
+    deleteButtonSpan.classList.add(buttonContentsCls);
+    deleteButton.appendChild(deleteButtonSpan);
 
 
     //and appending.

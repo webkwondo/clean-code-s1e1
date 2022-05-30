@@ -167,13 +167,19 @@ input[type="text"]:focus {
   width: 226px;
 }
 
-.button_type_delete img {
+.button__contents {
+  display: block;
+  width: 2em;
   height: 2em;
+  background: url('remove.svg') center center no-repeat;
+  background-size: 2em 2em;
+  margin: 0 auto;
+
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.button_type_delete img:hover {
+.button__contents:hover {
   transform: rotateZ(0);
 }
 
