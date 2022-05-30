@@ -6,8 +6,23 @@
   font-family: Lato, sans-serif;
 }
 
-.add {
-  margin: 1em 0;
+.page__main {
+  display: block;
+  width: 500px;
+  margin: 0 auto 0;
+}
+
+.page__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
 }
 
 .header {
@@ -33,10 +48,8 @@
 
 }
 
-.page__main {
-  display: block;
-  width: 500px;
-  margin: 0 auto 0;
+.add {
+  margin: 1em 0;
 }
 
 .add__field,
@@ -58,19 +71,6 @@ ul {
 
 li {
   list-style: none;
-}
-
-.visually-hidden:not(:focus):not(:active) {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  white-space: nowrap;
-  border: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(100%);
 }
 
 .button {
