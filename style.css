@@ -17,7 +17,7 @@
   text-align: right;
 }
 
-.header img {
+.header__img {
   width: 100%;
 }
 
@@ -73,11 +73,6 @@ li {
   clip-path: inset(100%);
 }
 
-input,
-.button {
-  outline: none;
-}
-
 .button {
   background: none;
   border: 0px;
@@ -86,6 +81,7 @@ input,
   width: 60px;
   font-family: Lato, sans-serif;
   cursor: pointer;
+  outline: none;
 }
 
 .button:hover {
@@ -106,7 +102,14 @@ input,
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.add__field,
+.task-list__checkbox,
+.task-list__field {
+  outline: none;
+}
+
+.add__field,
+.task-list__field {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -119,7 +122,8 @@ input[type="text"] {
   color: #888;
 }
 
-input[type="text"]:focus {
+.add__field:focus,
+.task-list__field:focus {
   color: #333;
 }
 
