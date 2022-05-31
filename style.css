@@ -25,9 +25,16 @@
   clip-path: inset(100%);
 }
 
+.page__header {
+  margin: 0 auto;
+}
+
+.page__add {
+  margin: 1em 0;
+}
+
 .header {
   width: 500px;
-  margin: 0 auto;
   display: block;
   text-align: right;
 }
@@ -48,10 +55,6 @@
 
 }
 
-.add {
-  margin: 1em 0;
-}
-
 .add__field,
 .task-list__field,
 .task-list__label {
@@ -66,7 +69,7 @@
 
 ul {
   margin: 0;
-  padding: 0px;
+  padding: 0;
 }
 
 li {
@@ -75,7 +78,7 @@ li {
 
 .button {
   background: none;
-  border: 0px;
+  border: 0;
   color: #888;
   font-size: 15px;
   width: 60px;
@@ -171,7 +174,7 @@ li {
   width: 226px;
 }
 
-.button__contents {
+.button_type_delete .button__contents {
   display: block;
   width: 2em;
   height: 2em;
@@ -183,7 +186,7 @@ li {
   transition: transform 200ms ease-in;
 }
 
-.button__contents:hover {
+.button_type_delete .button__contents:hover {
   transform: rotateZ(0);
 }
 
