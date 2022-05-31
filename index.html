@@ -20,14 +20,14 @@
       <aside class="page__add add">
         <label class="add__label" for="new-task">Add Item</label>
         <div class="add__inner">
-          <input class="add__field" id="new-task" type="text">
-          <button class="button">Add</button>
+          <input class="add__field js-add-field" id="new-task" type="text">
+          <button class="button js-add-button">Add</button>
         </div>
       </aside>
 
       <section class="page__section">
         <h2 class="page__subtitle">Todo</h2>
-        <ul class="task-list task-list_type_incompleted" id="incompleted-tasks">
+        <ul class="task-list task-list_type_incompleted js-incompleted-tasks">
           <li class="task-list__item">
             <input class="task-list__checkbox" type="checkbox">
             <label class="task-list__label">Pay Bills</label>
@@ -47,7 +47,7 @@
 
       <section class="page__section">
         <h2 class="page__subtitle">Completed</h2>
-        <ul class="task-list task-list_type_completed" id="completed-tasks">
+        <ul class="task-list task-list_type_completed js-completed-tasks">
           <li class="task-list__item">
             <input class="task-list__checkbox" type="checkbox" checked>
             <label class="task-list__label">See the Doctor</label>

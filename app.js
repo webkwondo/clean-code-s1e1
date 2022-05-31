@@ -18,10 +18,10 @@ var deleteButtonAria = 'Delete this task';
 var buttonContentsCls = 'button__contents';
 var inputClsName = 'task-list__field';
 var labelClsName = 'task-list__label';
-var taskInput=document.getElementById("new-task");//Add a new task.
-var addButton=document.getElementsByTagName("button")[0];//first button
-var incompleteTaskHolder=document.getElementById("incompleted-tasks");//ul of #incompleted-tasks
-var completedTasksHolder=document.getElementById("completed-tasks");//completed-tasks
+var taskInput = document.querySelector(".js-add-field");
+var addButton = document.querySelector(".js-add-button");
+var incompleteTaskHolder = document.querySelector(".js-incompleted-tasks");
+var completedTasksHolder = document.querySelector(".js-completed-tasks");
 
 
 //New task list item
