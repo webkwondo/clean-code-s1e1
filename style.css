@@ -178,7 +178,7 @@ li {
   display: block;
   width: 2em;
   height: 2em;
-  background: url('remove.svg') center center no-repeat;
+  background: url("remove.svg") center center no-repeat;
   background-size: 2em 2em;
   margin: 0 auto;
 
